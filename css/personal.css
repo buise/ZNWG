@@ -1,0 +1,207 @@
+body{
+    background:#f2f2f2;
+}
+/*头部*/
+header{
+    width:100%;
+    height:0.88rem;
+    position: fixed;
+    background: #fff;
+    left:0;
+    top:0;
+}
+.header-bottom{
+    width:100%;
+    height:0.88rem;
+}
+header h1{
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height: 0.88rem;
+    font-size: 0.4rem;
+    color:#333;
+}
+header h2{
+    position: absolute;
+    top:0.22rem;
+    right:0.3rem;
+    font-size: 0.34rem;
+    color:#333333;
+}
+header .imgBox{
+    position: absolute;
+    left:0;
+    top:0;
+    width:1.04rem;
+    height:0.88rem;
+}
+.imgBox img{
+    display: block;
+    height:0.46rem;
+    margin-top:0.21rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+.line{
+    width:100%;
+    height:0.01rem;
+    background: #e5e5e5;
+}
+
+.personal{
+    width:100%;
+    height:2.53rem;
+    margin:0.24rem 0;
+    background: #fff;
+}
+.personal .imgBox2{
+    width:2.44rem;
+    height:100%;
+    float:left;
+    position: relative;
+}
+.personal .imgBox2 img{
+    display: block;
+    width:1.77rem;
+    height:1.77rem;
+    border-radius: 50%;
+    margin:0.37rem auto 0 auto;
+}
+.personal .imgBox2 input{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    opacity: 0;
+}
+
+.personal .titleBox{
+    height:100%;
+    padding-top:0.88rem;
+    box-sizing: border-box;
+}
+.personal .titleBox h1{
+    font-size: 0.36rem;
+    color:#333;
+}
+.personal .titleBox h2{
+    font-size: 0.24rem;
+    color:#999;
+}
+
+.option{
+    width:100%;
+    height:1.01rem;
+    background: #fff;
+    padding:0.2rem 0;
+    box-sizing: border-box;
+    border-top: 0.01rem solid #e5e5e5;
+}
+.option .field{
+    width:2.17rem;
+    height:0.6rem;
+    padding-left:0.35rem;
+    box-sizing: border-box;
+    line-height: 0.6rem;
+    font-size: 0.3rem;
+    color:#333;
+    float: left;
+}
+.option input{
+    display: block;
+    width:4rem;
+    height:0.6rem;
+    box-sizing: border-box;
+    font-size: 0.3rem;
+    border: none;
+    float: left;
+    text-indent: 0.1rem;
+    background: #fff;
+}
+.option .gender{
+    display: block;
+    width:4rem;
+    height:0.6rem;
+    box-sizing: border-box;
+    font-size: 0.3rem;
+    border: none;
+    float: left;
+    text-indent: 0.1rem;
+    background: #fff;
+    line-height: 0.6rem;
+}
+.option .right{
+    float: right;
+    font-family: '宋体';
+    font-size: 0.36rem;
+    margin-right:0.34rem;
+    font-weight: bold;
+    color:#999;
+    line-height: 0.6rem;
+}
+
+.none{
+    width:100%;
+    height:0.24rem;
+    border-top: 0.01rem solid #e5e5e5;
+}
+
+
+/*点击弹出选项*/
+.clickBox{
+    width:100%;
+    height:100%;
+    background:rgba(51,51,51,0.76);
+    position: absolute;
+    left:0;
+    top:0;
+    display: none;
+    z-index: 1000;
+}
+.clickCancel{
+    height:0.9rem;
+    position: absolute;
+    left:0.24rem;
+    right:0.24rem;
+    bottom:0.24rem;
+    border:0.01rem solid #e6e6e6;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+    line-height: 0.9rem;
+    border-radius: 0.2rem;
+    font-size: 0.32rem;
+    color:#999;
+}
+.clickOption{
+    height:2.7rem;
+    position: absolute;
+    left:0.24rem;
+    right:0.24rem;
+    bottom:1.38rem;
+    border:0.01rem solid #e6e6e6;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 0.2rem;
+}
+.clickOption li{
+    width:100%;
+    height:0.9rem;
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #e6e6e6;
+    text-align: center;
+    line-height: 0.9rem;
+    font-size: 0.32rem;
+}
+.clickOption li:nth-child(1){
+    color:#e778a7;
+}
+.clickOption li:nth-child(2){
+    color:#7097d5;
+}
+.clickOption li:last-child{
+    border:none;
+    color:#007aff;
+}

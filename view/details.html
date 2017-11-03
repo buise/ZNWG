@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详细信息</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/details.css">
+    <script src="../js/main.js"></script>
+    <script src="../js/rem.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <script src="../js/details.js"></script>
+</head>
+<body onload="loaded()">
+<header>
+    <h1>详细信息</h1>
+    <div class="imgBox">
+        <img src="../images/back.png" alt="">
+    </div>
+    <a href="alarmIndex.html" class="alarm">
+        <img src="../images/alarm.png" alt="">
+    </a>
+</header>
+<div class="content">
+    <div class="title">
+        <img src="../images/delete.png" alt="">
+        <h1>设备名</h1>
+        <h2>备注信息</h2>
+    </div>
+    <div id="wrapper">
+        <div id="scroller">
+
+        </div>
+    </div>
+</div>
+
+<!--弹出-->
+<div class="click">
+    <div class="clickBox">
+        <div class="clickTop">确定删除 <span>null</span> 么?</div>
+        <div class="clickBottom clickLeft">取消</div>
+        <div class="clickBottom clickRight">确定</div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var myScroll;
+</script>

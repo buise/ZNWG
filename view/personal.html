@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>编辑资料</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/personal.css">
+    <script src="../js/main.js"></script>
+    <script src="../js/rem.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <script src="../js/personal.js"></script>
+</head>
+<body>
+<header>
+    <h1>编辑资料</h1>
+    <div class="imgBox">
+        <img src="../images/back.png" alt="">
+    </div>
+    <h2>保存</h2>
+</header>
+<div class="header-bottom"></div>
+<div class="line"></div>
+
+<div id="wrapper">
+    <div id="scroller">
+        <div class="personal">
+            <div class="imgBox2">
+                <img src="" alt="">
+                <input type="file" name="imageFile">
+            </div>
+            <div class="titleBox">
+                <h1>工程师 Lee</h1>
+                <h2>点击更改头像</h2>
+            </div>
+        </div>
+
+        <div class="option">
+            <div class="field">昵称</div>
+            <input type="text" name="username" placeholder="工程师 Lee">
+            <div class="right">&gt;</div>
+        </div>
+        <div class="option">
+            <div class="field">性别</div>
+            <div class="gender"></div>
+            <div class="right">&gt;</div>
+        </div>
+        <div class="option">
+            <div class="field">年龄</div>
+            <input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" name="age" placeholder="18">
+            <div class="right">&gt;</div>
+        </div>
+        <div class="option">
+            <div class="field">个性签名</div>
+            <input type="text" name="signature" placeholder="gongshengsi@sina.com">
+            <div class="right">&gt;</div>
+        </div>
+        <div class="none"></div>
+        <div class="option">
+            <div class="field">常用邮箱</div>
+            <input type="text" name="email" placeholder="介绍一下自己吧">
+            <div class="right">&gt;</div>
+        </div>
+        <div class="option">
+            <div class="field">手机号码</div>
+            <input type="text" name="cellphone" placeholder="18282828282" disabled>
+            <div class="right">&gt;</div>
+        </div>
+        <div class="option">
+            <div class="field">联系地址</div>
+            <input type="text" name="address" placeholder="写下你的联系地址吧">
+            <div class="right">&gt;</div>
+        </div>
+        <div class="option">
+            <div class="field">所属公司</div>
+            <input type="text" name="company" placeholder="所属公司">
+            <div class="right">&gt;</div>
+        </div>
+    </div>
+</div>
+
+
+<!--点击弹出选项-->
+<div class="clickBox">
+    <ul class="clickOption">
+        <li>男</li>
+        <li>女</li>
+        <li>保密</li>
+    </ul>
+    <div class="clickCancel">取消</div>
+</div>
+</body>
+</html>

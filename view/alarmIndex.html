@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>报警信息</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/alarmIndex.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/rem.js"></script>
+    <script src="../js/alarmIndex.js"></script>
+    <!--时间-->
+    <script src="../js/mobiscroll_002.js"></script>
+    <script src="../js/mobiscroll_004.js"></script>
+    <script src="../js/mobiscroll_003.js"></script>
+    <script src="../js/mobiscroll_005.js"></script>
+    <script src="../js/mobiscroll.js"></script>
+    <link href="../css/mobiscroll_002.css" rel="stylesheet">
+    <link href="../css/mobiscroll_003.css" rel="stylesheet">
+    <link href="../css/mobiscroll.css" rel="stylesheet">
+</head>
+<body onload="loaded()">
+<header>
+    <h1>报警信息</h1>
+    <div class="imgBox">
+        <img src="../images/back.png" alt="">
+    </div>
+    <a href="javascript:;" class="alarm">
+        <img src="../images/time.png" alt="" class="alarmTime">
+    </a>
+</header>
+<div class="line"></div>
+
+<table class="title">
+    <tr>
+        <th>报警信息</th>
+        <th>状态</th>
+        <th>时间</th>
+    </tr>
+</table>
+
+<div id="wrapper">
+    <div id="scroller">
+        <table class="content" cellspacing="0">
+
+        </table>
+    </div>
+</div>
+
+<div class="click">
+    <div class="right-top">
+        <div class="start">
+            <div class="click-title">开始时间:</div>
+            <input class="demos start-input" value="" readonly="readonly" name="appDateTime" id="appDateTime" type="text">
+        </div>
+        <div class="end">
+            <div class="click-title">结束时间:</div>
+            <input class="demos end-input" value="" readonly="readonly" name="appDateTime" id="appDateTime2" type="text">
+        </div>
+        <div class="option">
+            <div class="day">三天</div>
+            <div class="week">一周</div>
+            <div class="month">一月</div>
+            <div class="sure">确定</div>
+        </div>
+    </div>
+</div>
+
+<div class="loading">
+    <img src="../images/loading.gif" alt="">
+    <h1>正在加载数据 . . .</h1>
+</div>
+</body>
+</html>
+<script>
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', {
+            scrollX: true,
+            freeScroll: true,
+            click:true
+        });
+    }
+
+    var currYear = (new Date()).getFullYear();
+    var opt={};
+    opt.date = {preset : 'date'};
+    opt.datetime = {preset : 'datetime'};
+    opt.time = {preset : 'time'};
+    opt.default = {
+        theme: 'android-ics light', //皮肤样式
+        display: 'modal', //显示方式
+        mode: 'scroller', //日期选择模式
+        dateFormat: 'yyyy-mm-dd',
+        lang: 'zh',
+        showNow: true,
+        nowText: "今天",
+        startYear: currYear - 10, //开始年份
+        endYear: currYear + 10 //结束年份
+    };
+
+    var optDateTime = $.extend(opt['datetime'], opt['default']);
+    $("#appDateTime").mobiscroll(optDateTime).datetime(optDateTime);
+    $("#appDateTime2").mobiscroll(optDateTime).datetime(optDateTime);
+</script>

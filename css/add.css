@@ -1,0 +1,112 @@
+body{
+    background:#f2f2f2;
+}
+/*头部*/
+header{
+    width:100%;
+    height:0.88rem;
+    position: relative;
+    background: #fff;
+    border-bottom:0.01rem solid #e5e5e5;
+    box-sizing: border-box;
+}
+header h1{
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height: 0.88rem;
+    font-size: 0.4rem;
+    color:#333;
+}
+header .imgBox{
+    position: absolute;
+    left:0;
+    top:0;
+    width:1.04rem;
+    height:0.88rem;
+}
+.imgBox img{
+    display: block;
+    height:0.46rem;
+    margin-top:0.21rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*内容*/
+.code{
+    width:4.78rem;
+    height:4.78rem;
+    margin:1.18rem auto 0 auto;
+    background-image: url("../images/codeBox.png");
+    background-size: 100%;
+}
+p{
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.26rem;
+    margin-top:0.3rem;
+    text-align: center;
+    color:#ccc;
+}
+.addCode{
+    width:4.8rem;
+    height:0.74rem;
+    border-radius: 0.37rem;
+    background: #5ba2f2;
+    text-align: center;
+    line-height: 0.74rem;
+    font-size: 0.36rem;
+    color:#fff;
+    margin:2rem auto 0 auto;
+}
+
+/*点击弹出框*/
+.click{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.33);
+    z-index: 10000;
+    display: none;
+}
+.clickBox{
+    /*width:6rem;*/
+    height:3rem;
+    position: absolute;
+    left:0.75rem;
+    right:0.75rem;
+    top:4.36rem;
+    background: #fff;
+    border-radius: 0.12rem;
+}
+.clickTop{
+    display: block;
+    width:4.8rem;
+    height:0.82rem;
+    margin:0.5rem auto 0.33rem auto;
+    border-radius: 0.1rem;
+    border:1px solid #b0b1b4;
+    text-align: center;
+    font-size: 0.28rem;
+}
+.clickBottom{
+    width:1.88rem;
+    height:0.84rem;
+    border-radius: 0.06rem;
+    text-align: center;
+    line-height: 0.84rem;
+    color:#fff;
+    float:left;
+    font-size: 0.28rem;
+}
+.clickLeft{
+    background: #5ba2f2;
+    margin-left:0.88rem;
+}
+.clickRight{
+    background: #ccc;
+    margin-left:0.48rem;
+}

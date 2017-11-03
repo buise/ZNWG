@@ -1,0 +1,222 @@
+body{
+    background:#f2f2f2;
+}
+/*头部*/
+header{
+    width:100%;
+    height:0.88rem;
+    position: relative;
+    background: #fff;
+}
+header h1{
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height: 0.88rem;
+    font-size: 0.4rem;
+    color:#333;
+}
+header .imgBox{
+    position: absolute;
+    left:0;
+    top:0;
+    width:1.04rem;
+    height:0.88rem;
+}
+.imgBox img{
+    display: block;
+    height:0.46rem;
+    margin-top:0.21rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+.alarm{
+    display: block;
+    width:0.44rem;
+    height:0.46rem;
+    position: absolute;
+    right:0.31rem;
+    bottom:0.22rem;
+}
+.alarm img{
+    width:100%;
+}
+.line{
+    width:100%;
+    height:0.01rem;
+    background: #e5e5e5;
+}
+
+.title{
+    height:0.54rem;
+    width:100%;
+    padding:0 0.2rem;
+    box-sizing: border-box;
+    background: #fff;
+    margin-top:0.1rem;
+}
+.title th{
+    width:33.3333333333333%;
+    font-size: 0.28rem;
+}
+
+.content{
+    background: #fff;
+    width:100%;
+    padding:0 0.2rem;
+    box-sizing: border-box;
+}
+.content td{
+    width:33.3333333333333%;
+    font-size: 0.28rem;
+    height:1.12rem;
+    text-align: center;
+    line-height: 1.12rem;
+    border-top:0.01rem solid #ddd;
+}
+.content td div{
+    width:100%;
+    height:0.56rem;
+    line-height: 0.56rem;
+    color:#333;
+}
+.content td div.time{
+    font-size: 0.36rem;
+    line-height: 0.8rem;
+}
+.content td div.data{
+    font-size: 0.24rem;
+    line-height: 0.5rem;
+}
+
+/*iscroll*/
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top:1.53rem;
+    bottom:0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/*点击出现*/
+.click{
+    width:100%;
+    position: absolute;
+    left:0;
+    top:0.88rem;
+    bottom:0;
+    background: rgba(153,153,153,0.54);
+    z-index: 100;
+    display: none;
+}
+.right-top{
+    position: absolute;
+    width:5.4rem;
+    height:3.06rem;
+    top:0;
+    right:0.2rem;
+    background-image:url("../images/background1.png");
+    background-size: 100%;
+}
+.start,.end{
+    width:100%;
+    height:0.66rem;
+    margin-top:0.4rem;
+}
+.end{
+    margin-top:0.1rem;
+}
+.click-title{
+    width:1.2rem;
+    height:100%;
+    float: left;
+    color:#333;
+    font-size: 0.26rem;
+    line-height: 0.66rem;
+    margin-left:0.45rem;
+    margin-right:0.4rem;
+}
+.start-input,.end-input{
+    width:3.12rem;
+    height:100%;
+    border: 0.01rem solid #e6e6e6;
+    border-radius: 0.04rem;
+    box-sizing: border-box;
+    float: left;
+    text-indent: 0.1rem;
+}
+.option{
+    width:100%;
+    height:0.6rem;
+    margin-top:0.35rem;
+    display: flex;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.option div{
+    /*width:1.42rem;*/
+    width:1.1rem;
+    height:0.6rem;
+    border-radius: 0.06rem;
+    background: #007aff;
+    text-align: center;
+    line-height: 0.6rem;
+    color:#fff;
+    font-size: 0.26rem;
+}
+.loading{
+    width:100%;
+    position: absolute;
+    left:0;
+    top:0.88rem;
+    bottom:0;
+    z-index: 100;
+    background: rgba(136,136,136,0.7);
+    display: none;
+}
+.loading img{
+    display: block;
+    width:1.24rem;
+    height:1.24rem;
+    margin:4.78rem auto 0.3rem auto;
+}
+.loading h1{
+    height:0.5rem;
+    text-align: center;
+    color:#fff;
+    font-size: 0.3rem;
+}
+.alarmContent{
+    display: none;
+}
+.alarmContent td{
+    padding:0.1rem 0.5rem;
+    box-sizing: border-box;
+    line-height: 0.5rem;
+    color:blue;
+}

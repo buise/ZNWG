@@ -1,0 +1,12 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-size: 0.12rem;
+    font-family:"苹方";
+    font-weight: normal;
+}
+a{
+    color:#000;
+    text-decoration: none;
+}

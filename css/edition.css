@@ -1,0 +1,132 @@
+body{
+    background:#f2f2f2;
+}
+/*头部*/
+header{
+    width:100%;
+    height:0.88rem;
+    position: relative;
+    background: #fff;
+}
+header h1{
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height: 0.88rem;
+    font-size: 0.4rem;
+    color:#333;
+}
+header .imgBox{
+    position: absolute;
+    left:0;
+    top:0;
+    width:1.04rem;
+    height:0.88rem;
+}
+.imgBox img{
+    display: block;
+    height:0.46rem;
+    margin-top:0.21rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+.line{
+    width:100%;
+    height:0.01rem;
+    background: #e5e5e5;
+}
+
+.personal{
+    width:100%;
+    margin-top:0.32rem;
+}
+.personal img{
+    display: block;
+    width:2.38rem;
+    height:2.38rem;
+    border-radius: 50%;
+    margin:0 auto;
+}
+.personal h3{
+    height:0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color:#333;
+    margin-top:0.2rem;
+}
+.personal h4{
+    height:0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color:#999;
+    margin-top:0.1rem;
+}
+
+.update{
+    width:100%;
+    height:1rem;
+    background: #fff;
+    margin-top:0.36rem;
+}
+.update h1{
+    float:left;
+    height:1rem;
+    line-height: 1rem;
+    margin-left: 0.23rem;
+    font-size: 0.36rem;
+}
+.update h2{
+    float:right;
+    height:1rem;
+    line-height: 1rem;
+    margin-right: 0.28rem;
+    font-size: 0.32rem;
+    color:#9A9A9A;
+}
+
+.many{
+    position:absolute;
+    left:2.49rem;
+    right:2.48rem;
+    bottom:0.7rem;
+    height:0.5rem;
+}
+.many .h1{
+    display: block;
+    float:left;
+    font-size: 0.3rem;
+    height:0.5rem;
+    line-height: 0.5rem;
+    color:#0044a6;
+}
+.many .h2{
+    display: block;
+    float:right;
+    font-size: 0.3rem;
+    height:0.5rem;
+    line-height: 0.5rem;
+    color:#0044a6;
+}
+.many div{
+    width:0.03rem;
+    height:0.32rem;
+    background: #00a1de;
+    border-radius: 0.01rem;
+    float: left;
+    margin-left:0.4rem;
+    margin-top:0.09rem;
+}
+
+p{
+    text-align: center;
+    color:#999;
+    font-size: 0.24rem;
+    height:0.5rem;
+    width:100%;
+    line-height: 0.5rem;
+    position: absolute;
+    left:0;
+    bottom:0.2rem;
+}

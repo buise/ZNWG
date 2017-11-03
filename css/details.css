@@ -1,0 +1,234 @@
+body{
+    background:#f2f2f2;
+}
+/*头部*/
+header{
+    width:100%;
+    height:0.88rem;
+    position: relative;
+    background: #fff;
+}
+header h1{
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height: 0.88rem;
+    font-size: 0.4rem;
+    color:#333;
+}
+header .imgBox{
+    position: absolute;
+    left:0;
+    top:0;
+    width:1.04rem;
+    height:0.88rem;
+}
+.imgBox img{
+    display: block;
+    height:0.46rem;
+    margin-top:0.21rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+.alarm{
+    display: block;
+    width:0.44rem;
+    height:0.46rem;
+    position: absolute;
+    right:0.31rem;
+    bottom:0.24rem;
+}
+.alarm img{
+    width:100%;
+}
+
+/*内容*/
+.content{
+    width:100%;
+    overflow: hidden;
+    margin-bottom:0.18rem;
+}
+.title{
+    width:100%;
+    height:1.5rem;
+    border-top:0.01rem solid #e5e5e5;
+    border-bottom:0.01rem solid #e5e5e5;
+    box-sizing: border-box;
+    background: #fff;
+}
+.title img{
+    display: block;
+    float: right;
+    margin-top:0.55rem;
+    margin-right:0.47rem;
+    width:0.31rem;
+}
+.title h1{
+    margin-top:0.36rem;
+    margin-left:0.42rem;
+    height:0.32rem;
+    line-height: 0.32rem;
+    font-size: 0.3rem;
+}
+.title h2{
+    margin-top:0.23rem;
+    margin-left:0.42rem;
+    height:0.32rem;
+    line-height: 0.32rem;
+    font-size: 0.26rem;
+    color:#999;
+}
+ul{
+    width:100%;
+    overflow: hidden;
+}
+ul li{
+    width:100%;
+    height:1.95rem;
+    float:left;
+    border-bottom:0.01rem solid #e6e6e6;
+    box-sizing: border-box;
+    background: #fff;
+}
+.tu{
+    float:right;
+    margin-top:0.82rem;
+    margin-right:0.46rem;
+    width:0.34rem;
+}
+.sensorName{
+    width:100%;
+    height:0.7rem;
+    padding-left:0.4rem;
+    line-height: 0.7rem;
+    box-sizing: border-box;
+    font-size: 0.3rem;
+}
+.sensorImg{
+    width:1rem;
+    height:1rem;
+    float:left;
+    margin-left:0.32rem;
+}
+.sensorImg img{
+    height:0.6rem;
+    display: block;
+    margin:0.2rem;
+}
+.sensorValues{
+    height:0.5rem;
+    line-height: 0.5rem;
+}
+.sensorValues .value{
+    color:#04C1EA;
+    font-size: 0.34rem;
+    /*font-weight: 600;*/
+    margin-left:0.1rem;
+}
+.sensorValues span:nth-child(2){
+    color:#04C1EA;
+    font-size: 0.20rem;
+}
+.sensorAlarm{
+    height:1rem;
+    line-height: 1rem;
+}
+.sensorAlarm span{
+    color:#FF2A20;
+    margin-left:0.3rem;
+    font-size: 0.32rem;
+    /*font-weight: bold;*/
+}
+
+/*iscroll*/
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top:2.38rem;
+    bottom:0;
+    width: 100%;
+    overflow: hidden;
+}
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/*点击弹出框*/
+.click{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.33);
+    z-index: 10000;
+    display: none;
+}
+.clickBox{
+    /*width:6rem;*/
+    height:3rem;
+    position: absolute;
+    left:0.75rem;
+    right:0.75rem;
+    top:4.36rem;
+    background: #fff;
+    border-radius: 0.12rem;
+}
+.clickTop{
+    width:100%;
+    height:1.9rem;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 1.8rem;
+    box-sizing: border-box;
+    font-size: 0.36rem;
+}
+.clickTop span{
+    font-size: 0.36rem;
+}
+.clickBottom{
+    width:50%;
+    height:1.1rem;
+    border-right: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    line-height: 1.1rem;
+    font-size: 0.36rem;
+}
+.clickLeft{
+    color:#999;
+}
+.clickRight{
+    color:#c43030;
+    border-right:none;
+}
+
+
+.empty{
+    width:100%;
+    height:1.2rem;
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: 0.3rem;
+    color: #999;
+}

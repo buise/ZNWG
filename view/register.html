@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/main.js"></script>
+    <script src="../js/rem.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <script src="../js/register.js"></script>
+</head>
+<body onload="loaded()">
+<header>
+    <h1>注册</h1>
+    <div class="imgBox">
+        <img src="../images/back.png" alt="">
+    </div>
+</header>
+<div class="line"></div>
+
+<div id="wrapper">
+    <div id="scroller">
+        <div class="inputBox">
+            <h6>手机号</h6>
+            <input type="text" name="tel" placeholder="用于登录和找回密码">
+        </div>
+        <div class="send">获取验证码</div>
+        <div class="inputBox inputBoxs">
+            <h6>验证码</h6>
+            <input type="text" name="code" placeholder="请输入验证码">
+        </div>
+        <div class="inputBox">
+            <h6>昵称</h6>
+            <input type="text"  name="username" placeholder="2-10位中文/数字/字母 (选填)">
+        </div>
+        <div class="inputBox">
+            <h6>密码</h6>
+            <input type="password" name="password" placeholder="2-10位数字/字母">
+        </div>
+        <div class="inputBox">
+            <h6>确认密码</h6>
+            <input type="password" name="password2" placeholder="两次密码相同">
+        </div>
+        <div class="inputBox">
+            <h6>邮箱</h6>
+            <input type="text" name="email" placeholder="请输入邮箱 (选填)">
+        </div>
+        <div class="inputBox">
+            <h6>地址</h6>
+            <input type="text" name="address" placeholder="请输入地址 (选填)">
+        </div>
+        <div class="inputBox">
+            <h6>公司</h6>
+            <input type="text" name="company" placeholder="请输入公司 (选填)">
+        </div>
+
+        <div class="submit">立即注册</div>
+
+        <div class="clause">
+            <div>
+                <img src="../images/yes.png" alt="">
+            </div>
+            <p>我已阅读并接受 <span>版权声明</span> 和 <span>隐私保护</span> 条款</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', {
+            scrollX: true,
+            freeScroll: true,
+            click:true
+        });
+    }
+</script>

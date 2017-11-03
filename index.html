@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/main.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body onload="loaded()">
+<header>
+    <h1>华屹物联</h1>
+    <a href="view/add.html" class="add">
+        <img src="images/code.png" alt="">
+    </a>
+    <a href="view/alarm.html" class="alarm">
+        <img src="images/alarm.png" alt="">
+    </a>
+</header>
+<div class="line"></div>
+
+<div class="search">
+    <input type="text" placeholder="输入设备名称">
+    <img src="images/search.png" alt="">
+</div>
+
+<div id="wrapper">
+    <div id="scroller"></div>
+</div>
+
+<div class="nav">
+    <div class="option">
+        <a href="javascript:;" class="son">
+            <img src="images/monitor.png" alt="">
+            <h6>监控区</h6>
+        </a>
+    </div>
+    <div class="option">
+        <a href="view/myindex.html" class="son">
+            <img src="images/myself.png" alt="">
+            <h6 class="gulp">我的</h6>
+        </a>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var myScroll;
+</script>

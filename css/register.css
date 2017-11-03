@@ -1,0 +1,158 @@
+body{
+    background:#f2f2f2;
+}
+/*头部*/
+header{
+    width:100%;
+    height:0.88rem;
+    position: relative;
+    background: #fff;
+}
+header h1{
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height: 0.88rem;
+    font-size: 0.4rem;
+    color:#333;
+}
+header .imgBox{
+    position: absolute;
+    left:0;
+    top:0;
+    width:1.04rem;
+    height:0.88rem;
+}
+.imgBox img{
+    display: block;
+    height:0.46rem;
+    margin-top:0.21rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+.line{
+    width:100%;
+    height:0.01rem;
+    background: #e5e5e5;
+}
+
+/*内容*/
+.inputBox{
+    width:6.89rem;
+    height:1rem;
+    border:0.01rem solid #e6e6e6;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 0.08rem;
+    margin:0.2rem auto 0 auto;
+}
+.inputBox h6{
+    width:1.61rem;
+    height:100%;
+    float:left;
+    margin-left: 0.21rem;
+    line-height: 1rem;
+    font-size: 0.32rem;
+    color:#1a1919;
+}
+.inputBox input{
+    width:4.5rem;
+    height:0.6rem;
+    margin-top: 0.2rem;
+    border: none;
+    font-size: 0.32rem;
+}
+.inputBoxs{
+    width:4.66rem;
+    margin:0.2rem 0.25rem 0 0.3rem;
+}
+.inputBoxs input{
+    width:2.7rem;
+}
+.send{
+    width:1.88rem;
+    height:0.74rem;
+    margin-top:0.34rem;
+    margin-right:0.4rem;
+    background: #5ba2f2;
+    border-radius: 0.06rem;
+    float: right;
+    text-align: center;
+    line-height: 0.74rem;
+    font-size: 0.28rem;
+    color:#fff;
+}
+
+.submit{
+    width:5.11rem;
+    height:0.66rem;
+    text-align: center;
+    line-height: 0.66rem;
+    background: #1d89ff;
+    color:#fff;
+    margin:0.49rem auto 0 auto;
+    border-radius: 0.33rem;
+    font-size: 0.34rem;
+}
+
+.clause{
+    height:0.3rem;
+    float: left;
+    margin-left: 1.26rem;
+    margin-top: 0.7rem;
+}
+.clause div{
+    width:0.18rem;
+    height:0.18rem;
+    border:0.01rem solid #0075d9;
+    background: #fff;
+    float: left;
+    box-sizing: border-box;
+    margin-top:0.06rem;
+    margin-right:0.1rem;
+}
+.clause div img{
+    height:100%;
+    display: block;
+}
+.clause p{
+    float: left;
+    line-height: 0.3rem;
+    font-size: 0.23rem;
+    color:#1a1919;
+}
+.clause p span{
+    color:#135aa7;
+}
+
+/*iscroll*/
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top:0.89rem;
+    bottom:0;
+    width: 100%;
+    overflow: hidden;
+}
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}

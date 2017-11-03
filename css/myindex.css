@@ -1,0 +1,157 @@
+/*头部*/
+header{
+    width:100%;
+    height:0.88rem;
+    position: relative;
+}
+.set{
+    display: block;
+    width:0.44rem;
+    height:0.46rem;
+    position: absolute;
+    right:0.31rem;
+    top:0.24rem;
+}
+.set img{
+    width:100%;
+}
+.personal{
+    width:100%;
+    margin-top:0.32rem;
+}
+.personal img{
+    display: block;
+    width:2.38rem;
+    height:2.38rem;
+    border-radius: 50%;
+    margin:0 auto;
+}
+.personal h3{
+    height:0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color:#333;
+    margin-top:0.2rem;
+}
+.personal h4{
+    height:0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color:#999;
+    margin-top:0.1rem;
+}
+
+.line{
+    width:7.1rem;
+    height:0.01rem;
+    background: #999;
+    margin:0.76rem auto 1.19rem auto;
+}
+
+.list{
+    display: block;
+    width:4.7rem;
+    height:0.84rem;
+    margin:0 auto 0.59rem auto;
+    border-radius: 0.4rem;
+    box-shadow: 0.02rem 0.02rem 0.07rem #ddd;
+    padding-top: 0.18rem;
+    box-sizing: border-box;
+}
+.list img{
+    display: block;
+    height:0.48rem;
+    margin-left:1.06rem;
+    float:left;
+}
+.list h5{
+    height:0.48rem;
+    line-height: 0.48rem;
+    font-size: 0.4rem;
+    margin-left:0.3rem;
+    float:left;
+    color:#333;
+}
+
+
+
+
+
+
+/*底部*/
+.nav{
+    width:100%;
+    height:1rem;
+    background: #fff;
+    position:absolute;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    border-top:0.01rem solid #e5e5e5;
+    box-sizing: border-box;
+}
+.nav .option{
+    width:50%;
+    height:100%;
+    float: left;
+}
+.nav div:nth-child(1){
+    border-right:0.01rem dotted #eee;
+    box-sizing: border-box;
+}
+.son{
+    width:0.9rem;
+    height:0.75rem;
+    margin:0.12rem auto;
+    display: block;
+    overflow: hidden;
+}
+.son img{
+    display: block;
+    height:0.4rem;
+    margin:0 auto;
+}
+.son h6{
+    margin-top:0.08rem;
+    text-align: center;
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    color:#333;
+}
+.son h6.gulp{
+    color:#999;
+}
+
+/*iscroll*/
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top:1.75rem;
+    bottom:1.01rem;
+    width: 100%;
+    overflow: hidden;
+}
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
